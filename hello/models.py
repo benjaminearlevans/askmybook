@@ -1,5 +1,12 @@
 from django.db import models
 
+class Book(models.Model):
+    title = models.CharField(max_length=100)
+    author = models.CharField(max_length=100)
+    published = models.DateField()
+    category = models.CharField(max_length=100)
+    in_print = models.BooleanField()
+
 class Question(models.Model):
     question = models.CharField(max_length=140)
     context = models.TextField(null=True, blank=True)

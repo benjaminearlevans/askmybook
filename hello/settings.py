@@ -14,7 +14,7 @@ IS_HEROKU = "DYNO" in os.environ
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "CHANGE_ME!!!! (P.S. the SECRET_KEY environment variable will be used, if set, instead)."
+SECRET_KEY = "5jrp*7*_w&k*mes*8fpt&)64@2*#z%+@(wumif9^*f&f(4gm"
 
 if 'SECRET_KEY' in os.environ:
     SECRET_KEY = os.environ["SECRET_KEY"]
@@ -28,7 +28,7 @@ else:
 
 # SECURITY WARNING: don't run with debug turned on in production!
 if not IS_HEROKU:
-    DEBUG = True
+    DEBUG = False
 
 CSRF_TRUSTED_ORIGINS = ["https://www.askmybook.com", "http://127.0.0.1"]
 
